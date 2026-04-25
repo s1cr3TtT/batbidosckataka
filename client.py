@@ -16,7 +16,7 @@ import time
 import uuid
 
 
-DEFAULT_AGENT_TOKEN = "Agent-Sch00l-Access-2026-X"
+DEFAULT_AGENT_TOKEN = "Ur_token"
 DEFAULT_POLL_SECONDS = 0.5
 
 # Persistent shells per client_id
@@ -27,7 +27,7 @@ def parse_args(argv):
     parser = argparse.ArgumentParser(description="Safe Client Panel demo client")
     parser.add_argument(
         "--server-url",
-        default=os.environ.get("SERVER_URL", "https://submetallic-dyan-geoidal.ngrok-free.dev"),
+        default=os.environ.get("SERVER_URL"),
         help="Base URL of the server, e.g. http://SERVER_IP:8080 (or set SERVER_URL env var).",
     )
     parser.add_argument(
